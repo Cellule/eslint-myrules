@@ -1,5 +1,5 @@
 # eslint-myrules
-Plugin for [eslint-myrules-manage](https://github.com/Cellule/eslint-myrules-manager)
+Wrapper for [eslint-myrules-manager](https://github.com/Cellule/eslint-myrules-manager)
 
 ## Configuration
 - Fork this project.
@@ -10,6 +10,17 @@ Plugin for [eslint-myrules-manage](https://github.com/Cellule/eslint-myrules-man
 
 ```bash
 $ npm install cellule/eslint-myrules --save-dev
+```
+
+## Usage
+See [eslint-myrules-manager](https://github.com/Cellule/eslint-myrules-manager) for more details
+```js
+// package.json
+{
+  "script": {
+    "lint": "eslint-myrules lint"
+  }
+}
 ```
 
 ## Details
