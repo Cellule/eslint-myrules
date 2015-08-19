@@ -20,7 +20,7 @@ module.exports = {
     modifiers: {
       es2015: true,
       jshost: false,
-      react: false,
+      react: true,
       "no-code-style": false
     }
   }
