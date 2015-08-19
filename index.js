@@ -1,18 +1,27 @@
 var path = require("path");
+var modifiers = require("./modifiers");
 
 module.exports = {
   targetsPath: {
-    global: path.resolve(__dirname, "rules/global.eslintrc"),
-    frontend: path.resolve(__dirname, "rules/frontend.eslintrc")
+    global: path.resolve(__dirname, "rules", "global.eslintrc"),
+    frontend: path.resolve(__dirname, "rules", "frontend.eslintrc")
   },
   modifiers: {
     frontend: {
-      react: require("./modifiers/react")
+      react: modifiers.react,
+    },
+    global: {
+      "es2015": modifiers.es2015,
+      "jshost": modifiers.jshost,
+      "no-code-style": modifiers.codeStyle
     }
   },
   defaultConfig: {
     modifiers: {
-      react: true
+      es2015: true,
+      jshost: false,
+      react: false,
+      "no-code-style": false
     }
   }
 };

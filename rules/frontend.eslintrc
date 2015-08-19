@@ -1,14 +1,11 @@
 {
   "env": {
     "browser": true,
-    "jquery": true
   },
   "globals": {
     "__DEV__": false,
     "__PROD__": false,
   },
   "rules": {
-    // Confirmed that UglifyJS drops trailling comma
-    //"comma-dangle": [2, "never"]
   }
 }

@@ -10,7 +10,10 @@ Modifiers are specific to your rules and can be tedeious to implement. I suggest
 {
   "eslint-myrules": {
     "modifiers": {
-      "react": Boolean, // Enable/Disable react plugin. Default: true
+      "react": Boolean, // Enable/Disable react plugin. Default: false,
+      "es2015": Boolean, // Enable/Disable rules for ES2015. Default: true,
+      "jshost": Boolean, // Enable/Disable rules for jshost environment. Default: false,
+      "no-code-style": Boolean // Do not add rules concerning code style. Default: false
     }
   }
 }
