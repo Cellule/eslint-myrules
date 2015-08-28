@@ -7,21 +7,21 @@ module.exports = {
     frontend: path.resolve(__dirname, "rules", "frontend.eslintrc")
   },
   modifiers: {
-    frontend: {
-      react: modifiers.react,
-    },
-    global: {
-      "es2015": modifiers.es2015,
-      "jshost": modifiers.jshost,
-      "no-code-style": modifiers.codeStyle
-    }
+    react: modifiers.react,
+    "es2015": modifiers.es2015,
+    "jshost": modifiers.jshost,
+    "no-code-style": modifiers.codeStyle
   },
   defaultConfig: {
     modifiers: {
-      es2015: true,
-      jshost: false,
-      react: true,
-      "no-code-style": false
+      frontend: {
+        react: false,
+      },
+      global: {
+        "es2015": true,
+        "jshost": false,
+        "no-code-style": false
+      }
     }
   }
 };

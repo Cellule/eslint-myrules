@@ -19,6 +19,8 @@
      */
 
     "camelcase": [1, {"properties": "never"}],
+    // If working with es2015 this will be overriden to disable the rule
+    "comma-dangle": [2, "never"],
     "comma-spacing": 2,
     "consistent-this": [0, "self"],
     "curly": [2, "all"],

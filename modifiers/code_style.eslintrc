@@ -10,9 +10,8 @@
     "comma-style": [2, "last"],
     "computed-property-spacing": [2, "never"],
     "dot-location": [2, "property"],
-    "max-len": [1, 80, 2, {"ignoreUrls": true}],
+    "max-len": [1, 120, 2, {"ignoreComments": true, "ignoreUrls": true, "ignorePattern": "([\"`]).{30,}\\1.{0,4}\n?$"}],
     "no-floating-decimal": 2,
-    "no-inline-comments": 2,
     "no-multiple-empty-lines": [2, {"max": 2}],
     "no-nested-ternary": 2,
     "no-spaced-func": 2,
@@ -21,11 +20,6 @@
     "space-before-blocks": [2, "always"],
     "space-in-parens": [2, "never"],
     "space-infix-ops": 2,
-    "spaced-comment": [2, "always", {"exceptions": ["/"]}],
-    "lines-around-comment": [2, {
-        "allowBlockStart": true,
-        "beforeBlockComment": true,
-        "beforeLineComment": true
-    }],
+    "spaced-comment": [2, "always", {"exceptions": ["/"]}]
   }
 }

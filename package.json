@@ -1,6 +1,6 @@
 {
   "name": "cellule-eslint-myrules",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Define my favorite rules for eslint",
   "author": "Michael Ferris",
   "license": "MIT",
@@ -9,7 +9,8 @@
     "url": "https://github.com/Cellule/eslint-myrules"
   },
   "bin": {
-    "cellule-eslint-myrules": "./cliWrapper"
+    "cellule-eslint-myrules": "./cliWrapper",
+    "eslint": "node_modules/eslint/bin/eslint.js"
   },
   "main": "index.js",
   "scripts": {
@@ -26,7 +27,7 @@
   "dependencies": {
     "babel-eslint": "^4.0.5",
     "eslint": "^1.0.0",
-    "eslint-myrules-manager": "^0.3.0",
+    "eslint-myrules-manager": "^0.4.0",
     "eslint-plugin-babel": "^2.0.0",
     "eslint-plugin-react": "^3.0.0",
     "eslint-plugin-shadow-exception": "^1.1.1"

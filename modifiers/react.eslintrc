@@ -30,15 +30,15 @@
     "react/require-extension": [1, {"extensions": [".js", ".jsx"]}],
     "react/self-closing-comp": 1,
     "react/sort-comp": [1, {
-      order: [
+      "order": [
         "definition",
         "lifecycle",
         "/^on.+$/",
         "everything-else",
         "rendering",
       ],
-      groups: {
-        definition: [
+      "groups": {
+        "definition": [
           "displayName",
           "propTypes",
           "contextTypes",
@@ -49,7 +49,7 @@
           "state",
           "constructor",
         ],
-        lifecycle: [
+        "lifecycle": [
           "getDefaultProps",
           "getInitialState",
           "getChildContext",
@@ -61,7 +61,7 @@
           "componentDidUpdate",
           "componentWillUnmount"
         ],
-        rendering: [
+        "rendering": [
           "/^render.+$/",
           "render"
         ]

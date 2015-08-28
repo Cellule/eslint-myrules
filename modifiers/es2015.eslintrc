@@ -6,7 +6,7 @@
     "arrow-spacing": 2,
     "babel/generator-star-spacing": [2, "after"],
     "babel/new-cap": 2,
-    "comma-dangle": [2, "always-multiline"],
+    "comma-dangle": 0,
     "constructor-super": 2,
     "new-cap": 0,
     "no-class-assign": 2,
