@@ -1,6 +1,6 @@
 {
   "name": "cellule-eslint-myrules",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Define my favorite rules for eslint",
   "author": "Michael Ferris",
   "license": "MIT",
