@@ -15,6 +15,7 @@
     "no-multiple-empty-lines": [2, {"max": 2}],
     "no-nested-ternary": 2,
     "no-spaced-func": 2,
+    "no-useless-concat": 2,
     "operator-linebreak": 2,
     "padded-blocks": [2, "never"],
     "space-before-blocks": [2, "always"],
