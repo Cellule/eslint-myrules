@@ -1,7 +1,6 @@
 {
   // This will be the project root.
   "root": true,
-  "parser": "babel-eslint",
   "env": {
     "node": true
   },
