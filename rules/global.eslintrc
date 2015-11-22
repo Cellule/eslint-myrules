@@ -6,9 +6,7 @@
   },
   "globals": {
   },
-  "plugins": [
-    "shadow-exception"
-  ],
+  "plugins": [],
   "rules": {
     // First number is error level 0: ignore, 1: warning, 2: error
     // Second is option ie: [1, "double"] = Warn using double option
@@ -83,15 +81,16 @@
     "no-return-assign": 2,
     "no-script-url": 2,
     "no-sequences": 2,
-    "shadow-exception/no-shadow": [2, {
-      "exceptions": {
-        "err": true,
-        "next": true,
-        "callback": true,
-        "cb": true,
-        "res": true,
-        "result": true,
-        "response": true
+    "no-shadow": [2, {
+      "hoist": "functions",
+      "allow": [
+        "err",
+        "next",
+        "callback",
+        "cb",
+        "res",
+        "result",
+        "response"
       }
     }],
     "no-shadow-restricted-names": 2,
