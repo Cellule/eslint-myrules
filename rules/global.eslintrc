@@ -91,7 +91,7 @@
         "res",
         "result",
         "response"
-      }
+      ]
     }],
     "no-shadow-restricted-names": 2,
     "no-octal-escape": 2,

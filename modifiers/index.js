@@ -16,5 +16,5 @@ module.exports = {
   react: modifierMerge.bind(null, path.join(__dirname, "react.eslintrc")),
   es2015: modifierMerge.bind(null, path.join(__dirname, "es2015.eslintrc")),
   jshost: modifierMerge.bind(null, path.join(__dirname, "jshost.eslintrc")),
-  codeStyle: noMerge.bind(null, path.join(__dirname, "code_style.eslintrc")),
+  codeStyle: noMerge.bind(null, path.join(__dirname, "code_style.eslintrc"))
 };

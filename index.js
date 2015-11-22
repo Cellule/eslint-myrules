@@ -15,7 +15,7 @@ module.exports = {
   defaultConfig: {
     modifiers: {
       frontend: {
-        react: false,
+        react: false
       },
       global: {
         "es2015": true,
