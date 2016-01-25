@@ -1,4 +1,8 @@
-{
+var codependency = require("codependency");
+var requirePeer = codependency.register(module);
+requirePeer("eslint-plugin-react");
+
+module.exports = {
   "plugins": [
     "react"
   ],

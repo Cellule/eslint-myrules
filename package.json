@@ -1,6 +1,6 @@
 {
-  "name": "cellule-eslint-myrules",
-  "version": "3.1.1",
+  "name": "eslint-config-cellule",
+  "version": "1.0.0",
   "description": "Define my favorite rules for eslint",
   "author": "Michael Ferris",
   "license": "MIT",
@@ -8,32 +8,14 @@
     "type": "git",
     "url": "https://github.com/Cellule/eslint-myrules"
   },
-  "bin": {
-    "cellule-eslint-myrules": "./cli.js"
-  },
-  "main": "index.js",
-  "scripts": {
-    "test": "node cli.js lint . --debug",
-    "lint": "node cli.js lint ."
-  },
-  "eslint-myrules": {
-    "modifiers": {
-      "global": {
-        "es2015": false,
-        "react": false,
-        "jshost": false,
-        "no-code-style": false
-      }
-    }
-  },
-  "dependencies": {
+  "main": "rules/global.js",
+  "scripts": {},
+  "optionalPeerDependencies": {
     "babel-eslint": "^4.0.5",
-    "eslint": "^1.4.3",
-    "eslint-myrules-manager": "^0.5.0",
     "eslint-plugin-babel": "^2.0.0",
     "eslint-plugin-react": "^3.4.0"
   },
-  "devDependencies": {
-    "app-module-path": "^1.0.4"
+  "dependencies": {
+    "codependency": "^0.1.4"
   }
 }
