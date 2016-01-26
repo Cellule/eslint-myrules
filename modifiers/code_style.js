@@ -1,14 +1,10 @@
 module.exports = {
-  "plugins": [
-    "babel"
-  ],
   "rules": {
     /*
      * Stylistic Issues
      * These rules are purely matters of style and are quite subjective.
      */
     "array-bracket-spacing": [2, "never"], // enforce spacing inside array brackets
-    "babel/object-curly-spacing": [2, "never"],
     "block-spacing": [2, "never"], // disallow or enforce spaces inside of single line blocks
     "brace-style": [2, "1tbs", {"allowSingleLine": true}], // enforce one true brace style
     "camelcase": [1, {"properties": "never"}], // require camel case names

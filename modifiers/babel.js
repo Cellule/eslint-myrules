@@ -5,6 +5,7 @@ module.exports = {
     "babel"
   ],
   "rules": {
+    "babel/object-curly-spacing": [2, "never"],
     "babel/generator-star-spacing": [2, "after"],
     "babel/new-cap": 2,
     "generator-star-spacing": 0, // enforce spacing around the * in generator functions
