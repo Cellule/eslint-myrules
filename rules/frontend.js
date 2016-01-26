@@ -1,6 +1,8 @@
+
+// Overrides global rules for frontend
 module.exports = {
   "env": {
-    "browser": true,
+    "browser": true
   },
   "globals": {
     "__DEV__": false,
@@ -8,4 +10,4 @@ module.exports = {
   },
   "rules": {
   }
-}
+};
