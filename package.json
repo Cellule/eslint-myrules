@@ -11,10 +11,11 @@
   "main": "rules/global.js",
   "scripts": {},
   "optionalPeerDependencies": {
-    "eslint": "^1.10.3",
     "babel-eslint": "^4.0.5",
-    "eslint-plugin-babel": "^2.0.0",
+    "eslint-plugin-babel": "^3.0.0",
     "eslint-plugin-react": "^3.4.0"
   },
-  "dependencies": {}
+  "peerdependencies": {
+    "eslint": "^1.10.3"
+  }
 }
