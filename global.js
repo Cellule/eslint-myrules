@@ -1,10 +1,4 @@
 module.exports = {
-  "env": {
-    "node": true
-  },
-  "globals": {},
-  "plugins": [],
-
   "rules": {
     /*
      * Possible Errors

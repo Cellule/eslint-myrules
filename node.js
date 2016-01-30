@@ -1,4 +1,7 @@
 module.exports = {
+  "env": {
+    "node": true
+  },
   "rules": {
     /*
      * Node.js and CommonJS
