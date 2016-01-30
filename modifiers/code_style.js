@@ -20,7 +20,7 @@ module.exports = {
     "indent": [2, 2, {"SwitchCase": 1, "VariableDeclarator": 2}], // specify tab or space width for your code
     "jsx-quotes": 0, // specify whether double or single quotes should be used in JSX attributes
     "key-spacing": 2, // enforce spacing between keys and values in object literal properties
-    "lines-around-comment": [2, {"beforeBlockComment": true, "beforeLineComment": true, "allowBlockStart": true, "allowBlockEnd": true, "allowObjectStart": true, "allowObjectEnd": true, "allowArrayStart": true, "allowArrayEnd": true}], // enforce empty lines around comments
+    "lines-around-comment": [0, {"beforeBlockComment": true, "beforeLineComment": true, "allowBlockStart": true, "allowBlockEnd": true, "allowObjectStart": true, "allowObjectEnd": true, "allowArrayStart": true, "allowArrayEnd": true}], // enforce empty lines around comments
     "max-depth": [1, 15], // specify the maximum depth that blocks can be nested
     "max-len": [1, 120, 2, {"ignoreComments": true, "ignoreUrls": true, "ignorePattern": "([\"`]).{30,}\\1.{0,4}\n?$"}], // specify the maximum length of a line in your program
     "max-nested-callbacks": [1, 5], // specify the maximum depth callbacks can be nested
@@ -65,7 +65,7 @@ module.exports = {
     "space-infix-ops": [2, {"int32Hint": true}], // require spaces around operators
     "space-return-throw-case": 2, // require a space after return, throw, and case
     "space-unary-ops": 2, // require or disallow spaces before/after unary operators
-    "spaced-comment": [2, "always", {"exceptions": ["/"]}], // require or disallow a space immediately following the // or /* in a comment
+    "spaced-comment": [2, "always", {"exceptions": ["/", "*"]}], // require or disallow a space immediately following the // or /* in a comment
     "wrap-regex": 0, // require regex literals to be wrapped in parentheses
   }
 };

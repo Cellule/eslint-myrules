@@ -128,6 +128,5 @@ module.exports = {
      * Stylistic Issues
      * These rules are purely matters of style and are quite subjective.
      */
-    "linebreak-style": 2, // disallow mixed 'LF' and 'CRLF' as linebreaks
   }
 };
