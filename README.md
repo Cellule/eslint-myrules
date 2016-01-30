@@ -39,14 +39,14 @@ Here's a recommended order for this package of rules. (You will rarely if ever n
 ```js
 {
   "extends": [
-    "cellule\global.js",
-    "cellule\frontend.js",
-    "cellule\node.js",
-    "cellule\chakra.js",
-    "cellule\codestyle.js",
-    "cellule\es2015.js",
-    "cellule\babel.js",
-    "cellule\react.js"
+    "cellule/global.js",
+    "cellule/frontend.js",
+    "cellule/node.js",
+    "cellule/chakra.js",
+    "cellule/codestyle.js",
+    "cellule/es2015.js",
+    "cellule/babel.js",
+    "cellule/react.js"
   ]
 }
 ```
