@@ -1,3 +1,7 @@
+# Deprecation
+This project is no longer supported. Switched to Eslint [Shareable Configs](http://eslint.org/docs/developer-guide/shareable-configs).
+See [eslint-config-cellule](https://www.npmjs.com/package/eslint-config-cellule) for continued support.
+
 # eslint-myrules
 Wrapper for [eslint-myrules-manager](https://github.com/Cellule/eslint-myrules-manager)
 
