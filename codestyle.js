@@ -65,7 +65,7 @@ module.exports = {
     "space-infix-ops": [2, {"int32Hint": true}], // require spaces around operators
     "space-return-throw-case": 2, // require a space after return, throw, and case
     "space-unary-ops": 2, // require or disallow spaces before/after unary operators
-    "spaced-comment": [2, "always", {"exceptions": ["/", "*"]}], // require or disallow a space immediately following the // or /* in a comment
+    "spaced-comment": [2, "always", {"markers": [":", "::"], "exceptions": ["/", "*"]}], // require or disallow a space immediately following the // or /* in a comment
     "wrap-regex": 0, // require regex literals to be wrapped in parentheses
   }
 };

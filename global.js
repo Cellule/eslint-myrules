@@ -67,7 +67,7 @@ module.exports = {
     "no-labels": 2, // disallow use of labeled statements
     "no-lone-blocks": 2, // disallow unnecessary nested blocks
     "no-loop-func": 2, // disallow creation of functions within loops
-    "no-magic-numbers": 1, // disallow the use of magic numbers
+    "no-magic-numbers": 0, // disallow the use of magic numbers
     "no-multi-spaces": [2, {"exceptions": {"VariableDeclarator": true}}], // disallow use of multiple spaces // Allow multi spaces for variable declaration (alignement)
     "no-multi-str": 2, // disallow use of multiline strings
     "no-native-reassign": 2, // disallow reassignments of native objects
