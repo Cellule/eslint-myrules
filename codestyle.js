@@ -29,6 +29,7 @@ module.exports = {
     "new-cap": 2, // require a capital letter for constructors
     "new-parens": 2, // disallow the omission of parentheses when invoking a constructor with no arguments
     "newline-after-var": 0, // require or disallow an empty newline after variable declarations
+    "newline-per-chained-call": [2, {"ignoreChainWithDepth": 4}],
     "no-array-constructor": 2, // disallow use of the Array constructor
     "no-bitwise": 0, // disallow use of bitwise operators
     "no-continue": 0, // disallow use of the continue statement
@@ -46,8 +47,10 @@ module.exports = {
     "no-trailing-spaces": 2, // disallow trailing whitespace at the end of lines
     "no-underscore-dangle": 1, // disallow dangling underscores in identifiers
     "no-unneeded-ternary": 2, // disallow the use of ternary operators when a simpler alternative exists
+    "no-whitespace-before-property": 2, // disallow whitespace before properties
     "object-curly-spacing": [2, "never"], // require or disallow padding inside curly braces
     "one-var": [2, "never"], // require or disallow one variable declaration per function
+    "one-var-declaration-per-line": 0, // require or disallow an newline around variable declarations
     "operator-assignment": [2, "always"], // require assignment operator shorthand where possible or prohibit it entirely
     "operator-linebreak": 2, // enforce operators to be placed before or after line breaks
     "padded-blocks": [2, "never"], // enforce padding within blocks
@@ -57,13 +60,11 @@ module.exports = {
     "semi": 2, // require or disallow use of semicolons instead of ASI
     "semi-spacing": [2, {"before": false, "after": true}], // enforce spacing before and after semicolons
     "sort-vars": 0, // sort variables within the same declaration block
-    "space-after-keywords": [2, "always"], // require a space after certain keywords
+    "keyword-spacing": [2, {"before": true, "after": true}], // enforce spacing before and after keywords
     "space-before-blocks": [2, "always"], // require or disallow a space before blocks
     "space-before-function-paren": [2, "never"], // require or disallow a space before function opening parenthesis
-    "space-before-keywords": [2, "always"], // require a space before certain keywords
     "space-in-parens": [2, "never"], // require or disallow spaces inside parentheses
     "space-infix-ops": [2, {"int32Hint": true}], // require spaces around operators
-    "space-return-throw-case": 2, // require a space after return, throw, and case
     "space-unary-ops": 2, // require or disallow spaces before/after unary operators
     "spaced-comment": [2, "always", {"markers": [":", "::"], "exceptions": ["/", "*"]}], // require or disallow a space immediately following the // or /* in a comment
     "wrap-regex": 0, // require regex literals to be wrapped in parentheses

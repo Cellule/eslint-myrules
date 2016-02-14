@@ -7,7 +7,7 @@ module.exports = {
     "comma-dangle": 0, // disallow or enforce trailing commas
     "no-cond-assign": 2, // disallow assignment in conditional expressions
     "no-console": 0, // disallow use of console in the node environment
-    "no-constant-condition": 2, // disallow use of constant expressions in conditions
+    "no-constant-condition": 0, // disallow use of constant expressions in conditions
     "no-control-regex": 2, // disallow control characters in regular expressions
     "no-debugger": 2, // disallow use of debugger
     "no-dupe-args": 2, // disallow duplicate arguments in functions
@@ -38,6 +38,7 @@ module.exports = {
      * These are rules designed to prevent you from making mistakes. They either prescribe a better way of doing something or help you avoid footguns.
      */
     "accessor-pairs": 0, // Enforces getter/setter pairs in objects
+    "array-callback-return": 2, // Enforces return statements in callbacks of array's methods
     "block-scoped-var": 0, // treat var statements as if they were block scoped
     "complexity": 0, // specify the maximum cyclomatic complexity allowed in a program
     "consistent-return": 0, // require return statements to either always or never specify values
@@ -52,12 +53,14 @@ module.exports = {
     "no-case-declarations": 2, // disallow lexical declarations in case clauses
     "no-div-regex": 2, // disallow division operators explicitly at beginning of regular expression
     "no-else-return": 2, // disallow else after a return in an if
-    "no-empty-label": 2, // disallow use of labels for anything other than loops and switches
+    "no-labels": [2, {"allowLoop": true, "allowSwitch": true}], // disallow use of labeled statements
+    "no-empty-function": 0, // disallow use of empty functions
     "no-empty-pattern": 2, // disallow use of empty destructuring patterns
     "no-eq-null": 2, // disallow comparisons to null without a type-checking operator
     "no-eval": 2, // disallow use of eval()
     "no-extend-native": 2, // disallow adding to native types
     "no-extra-bind": 2, // disallow unnecessary function binding
+    "no-extra-label": 2, // disallow unnecessary labels
     "no-fallthrough": 2, // disallow fallthrough of case statements
     "no-floating-decimal": 2, // disallow the use of leading or trailing decimal points in numeric literals
     "no-implicit-coercion": 0, // disallow the type conversions with shorter notations
@@ -67,7 +70,7 @@ module.exports = {
     "no-labels": 2, // disallow use of labeled statements
     "no-lone-blocks": 2, // disallow unnecessary nested blocks
     "no-loop-func": 2, // disallow creation of functions within loops
-    "no-magic-numbers": 0, // disallow the use of magic numbers
+    "no-magic-numbers": [2, { ignoreArrayIndexes: true, ignore: [-1, 0, 1, 2, 3, 4, 5, 60, 1000] }], // disallow the use of magic numbers
     "no-multi-spaces": [2, {"exceptions": {"VariableDeclarator": true}}], // disallow use of multiple spaces // Allow multi spaces for variable declaration (alignement)
     "no-multi-str": 2, // disallow use of multiline strings
     "no-native-reassign": 2, // disallow reassignments of native objects
@@ -82,9 +85,11 @@ module.exports = {
     "no-redeclare": 2, // disallow declaring the same variable more than once
     "no-return-assign": 2, // disallow use of assignment in return statement
     "no-script-url": 2, // disallow use of javascript: urls.
+    "no-self-assign": 2, // disallow assignments where both sides are exactly the same
     "no-self-compare": 2, // disallow comparisons where both sides are exactly the same
     "no-sequences": 2, // disallow use of the comma operator
     "no-throw-literal": 2, // restrict what can be thrown as an exception
+    "no-unmodified-loop-condition": 2, // disallow unmodified conditions of loops
     "no-unused-expressions": 2, // disallow usage of expressions in statement position
     "no-useless-call": 2, // disallow unnecessary .call() and .apply()
     "no-useless-concat": 2, // disallow unnecessary concatenation of literals or template literals
