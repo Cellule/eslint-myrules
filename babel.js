@@ -1,6 +1,7 @@
+require("./monkeyPatch").addPlugins(["babel"]);
 
 module.exports = {
-  "parser": "babel-eslint",
+  "parser": require.resolve("babel-eslint"),
   "plugins": [
     "babel"
   ],

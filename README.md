@@ -4,14 +4,7 @@ This is a set of rules and configuration for eslint using [Shareable Config](htt
 ## Installation
 
 ```bash
-$ npm install eslint
-$ npm install eslint-config-cellule
-```
-
-Install all optional dependencies
-
-```bash
-$ npm install babel-eslint eslint-plugin-babel eslint-plugin-flow-vars eslint-plugin-react
+$ npm install --save-dev eslint@~2.0.0 eslint-config-cellule
 ```
 
 ## Usage

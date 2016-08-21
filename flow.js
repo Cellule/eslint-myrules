@@ -1,5 +1,7 @@
+require("./monkeyPatch").addPlugins(["flow-vars"]);
+
 module.exports = {
-  "parser": "babel-eslint",
+  "parser": require.resolve("babel-eslint"),
   "plugins": [
     "flow-vars"
   ],

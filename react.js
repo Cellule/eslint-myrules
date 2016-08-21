@@ -1,3 +1,5 @@
+require("./monkeyPatch").addPlugins(["react"]);
+
 module.exports = {
   "plugins": [
     "react"
