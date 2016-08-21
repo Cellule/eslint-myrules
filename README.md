@@ -20,7 +20,6 @@ In your `.eslintrc` config, extends to this module with
 - `"cellule/global.js"`: Default config (ie: `extends: "cellule"`). This contains mostly rules to prevent errors and covers best practices.
 - `"cellule/frontend.js"`: Config for files targeted for the browser.
 - `"cellule/babel.js"`: Config for when you use [babel](http://babeljs.io/) to compile your sources.
-  - install optional dependencies: `npm install babel-eslint eslint-plugin-babel`
   - [babel-eslint](https://github.com/babel/babel-eslint): Parser supporting extended language features
   - [eslint-plugin-babel](https://github.com/babel/eslint-plugin-babel): An eslint plugin companion to babel-eslint
 - `"cellule/chakra.js"`: Config when your host is `ch.exe` for [ChakraCore](https://github.com/Microsoft/ChakraCore).
@@ -28,11 +27,9 @@ In your `.eslintrc` config, extends to this module with
 - `"cellule/es2015.js"`: Config when your host supports es2015 without [babel](http://babeljs.io/).
 - `"cellule/node.js"`: Config targeting node environment.
 - `"cellule/flow.js"`: Config when using [flow](http://flowtype.org/).
-  - install optional dependencies: `npm install babel-eslint eslint-plugin-flow-vars`
   - [babel-eslint](https://github.com/babel/babel-eslint): Parser supporting extended language features
   - [eslint-plugin-flow-vars](https://github.com/zertosh/eslint-plugin-flow-vars): An eslint plugin that makes flow type annotations global variables and marks declarations as used
 - `"cellule/react.js"`: Config when you use [React](https://facebook.github.io/react/) in your sources.
-  - install optional dependencies: `npm install eslint-plugin-react`
   - [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): React specific linting rules for ESLint
 
 ### Recommended order
@@ -54,6 +51,3 @@ Here's a recommended order for this package of rules. (You will rarely if ever n
   ]
 }
 ```
-
-### Side notes
-The optionalPeerDependencies are mainly used for me to keep track the last version I checked to update the rules
