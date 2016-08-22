@@ -4,7 +4,7 @@ This is a set of rules and configuration for eslint using [Shareable Config](htt
 ## Installation
 
 ```bash
-$ npm install --save-dev eslint@~2.0.0 eslint-config-cellule
+$ npm install --save-dev eslint@~3.3.0 eslint-config-cellule
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ In your `.eslintrc` config, extends to this module with
 - `"cellule/node.js"`: Config targeting node environment.
 - `"cellule/flow.js"`: Config when using [flow](http://flowtype.org/).
   - [babel-eslint](https://github.com/babel/babel-eslint): Parser supporting extended language features
-  - [eslint-plugin-flow-vars](https://github.com/zertosh/eslint-plugin-flow-vars): An eslint plugin that makes flow type annotations global variables and marks declarations as used
+  - [eslint-plugin-flowtype](https://github.com/gajus/eslint-plugin-flowtype): An eslint plugin that makes flow type annotations global variables and marks declarations as used
 - `"cellule/react.js"`: Config when you use [React](https://facebook.github.io/react/) in your sources.
   - [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): React specific linting rules for ESLint
 

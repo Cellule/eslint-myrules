@@ -1,37 +1,16 @@
 module.exports = {
+  "extends": "eslint:recommended",
   "rules": {
     /*
      * Possible Errors
      * The following rules point out areas where you might have made mistakes.
      */
-    "comma-dangle": 0, // disallow or enforce trailing commas
-    "no-cond-assign": 2, // disallow assignment in conditional expressions
     "no-console": 0, // disallow use of console in the node environment
-    "no-constant-condition": 0, // disallow use of constant expressions in conditions
-    "no-control-regex": 2, // disallow control characters in regular expressions
-    "no-debugger": 2, // disallow use of debugger
-    "no-dupe-args": 2, // disallow duplicate arguments in functions
-    "no-dupe-keys": 2, // disallow duplicate keys when creating object literals
-    "no-duplicate-case": 2, // disallow a duplicate case label.
-    "no-empty": 2, // disallow empty statements
-    "no-empty-character-class": 2, // disallow the use of empty character classes in regular expressions
-    "no-ex-assign": 2, // disallow assigning to the exception in a catch block
-    "no-extra-boolean-cast": 2, // disallow double-negation boolean casts in a boolean context
+    "no-constant-condition": 1, // disallow use of constant expressions in conditions
     "no-extra-parens": [2, "functions"], // disallow unnecessary parentheses: only for function declarations
-    "no-extra-semi": 2, // disallow unnecessary semicolons
-    "no-func-assign": 2, // disallow overwriting functions written as function declarations
-    "no-inner-declarations": 2, // disallow function or variable declarations in nested blocks
-    "no-invalid-regexp": 2, // disallow invalid regular expression strings in the RegExp constructor
-    "no-irregular-whitespace": 2, // disallow irregular whitespace outside of strings and comments
-    "no-negated-in-lhs": 2, // disallow negation of the left operand of an in expression
-    "no-obj-calls": 2, // disallow the use of object properties of the global object (Math and JSON) as functions
-    "no-regex-spaces": 2, // disallow multiple spaces in a regular expression literal
-    "no-sparse-arrays": 2, // disallow sparse arrays
-    "no-unexpected-multiline": 2, // Avoid code that looks like two expressions but is actually one
-    "no-unreachable": 2, // disallow unreachable statements after a return, throw, continue, or break statement
-    "use-isnan": 2, // disallow comparisons with the value NaN
+    "no-template-curly-in-string": 2, // Disallow template literal placeholder syntax in regular strings
+    "no-unsafe-negation": 2, // disallow negation of the left operand of an in expression
     "valid-jsdoc": [2, {"prefer": {"returns": "return"}, "requireReturn": false}], // Ensure JSDoc comments are valid
-    "valid-typeof": 2, // Ensure that the results of typeof are compared against a valid string
 
     /*
      * Best Practices
@@ -47,13 +26,12 @@ module.exports = {
     "dot-location": [2, "property"], // enforces consistent newlines before or after dots
     "dot-notation": 2, // encourages use of dot notation whenever possible
     "eqeqeq": 2, // require the use of === and !==
-    "guard-for-in": 2, // make sure for-in loops have an if statement
+    "guard-for-in": 0, // make sure for-in loops have an if statement
     "no-alert": 2, // disallow the use of alert, confirm, and prompt
     "no-caller": 2, //  disallow use of arguments.caller or arguments.callee
     "no-case-declarations": 2, // disallow lexical declarations in case clauses
     "no-div-regex": 2, // disallow division operators explicitly at beginning of regular expression
     "no-else-return": 2, // disallow else after a return in an if
-    "no-labels": [2, {"allowLoop": true, "allowSwitch": true}], // disallow use of labeled statements
     "no-empty-function": 0, // disallow use of empty functions
     "no-empty-pattern": 2, // disallow use of empty destructuring patterns
     "no-eq-null": 2, // disallow comparisons to null without a type-checking operator
@@ -63,17 +41,17 @@ module.exports = {
     "no-extra-label": 2, // disallow unnecessary labels
     "no-fallthrough": 2, // disallow fallthrough of case statements
     "no-floating-decimal": 2, // disallow the use of leading or trailing decimal points in numeric literals
+    "no-global-assign": 2, // disallow assignments to native objects or read-only global variables
     "no-implicit-coercion": 0, // disallow the type conversions with shorter notations
     "no-implied-eval": 2, // disallow use of eval()-like methods
     "no-invalid-this": 2, // disallow this keywords outside of classes or class-like objects
     "no-iterator": 2, // disallow usage of __iterator__ property
-    "no-labels": 2, // disallow use of labeled statements
+    "no-labels": [2, {"allowLoop": true, "allowSwitch": true}], // disallow use of labeled statements
     "no-lone-blocks": 2, // disallow unnecessary nested blocks
     "no-loop-func": 2, // disallow creation of functions within loops
-    "no-magic-numbers": [2, { ignoreArrayIndexes: true, ignore: [-1, 0, 1, 2, 3, 4, 5, 60, 1000] }], // disallow the use of magic numbers
+    "no-magic-numbers": 0, // disallow the use of magic numbers
     "no-multi-spaces": [2, {"exceptions": {"VariableDeclarator": true}}], // disallow use of multiple spaces // Allow multi spaces for variable declaration (alignement)
     "no-multi-str": 2, // disallow use of multiline strings
-    "no-native-reassign": 2, // disallow reassignments of native objects
     "no-new": 2, // disallow use of the new operator when not part of an assignment or comparison
     "no-new-func": 2, // disallow use of new operator for Function object
     "no-new-wrappers": 2, // disallows creating new instances of String,Number, and Boolean
@@ -81,7 +59,6 @@ module.exports = {
     "no-octal-escape": 2, // disallow use of octal escape sequences in string literals, such as var foo = "Copyright \251";
     "no-param-reassign": 0, // disallow reassignment of function parameters // enabled in es2015
     "no-proto": 2, // disallow usage of __proto__ property
-    "no-process-env": 1, // disallow use of process.env
     "no-redeclare": 2, // disallow declaring the same variable more than once
     "no-return-assign": 2, // disallow use of assignment in return statement
     "no-script-url": 2, // disallow use of javascript: urls.
@@ -93,6 +70,7 @@ module.exports = {
     "no-unused-expressions": 2, // disallow usage of expressions in statement position
     "no-useless-call": 2, // disallow unnecessary .call() and .apply()
     "no-useless-concat": 2, // disallow unnecessary concatenation of literals or template literals
+    "no-useless-escape": 2, // disallow unnecessary escape characters
     "no-void": 2, // disallow use of the void operator
     "no-warning-comments": 1, // disallow usage of configurable warning terms in comments - e.g. TODO or FIXME
     "no-with": 2, // disallow use of the with statement
@@ -115,6 +93,7 @@ module.exports = {
     "no-catch-shadow": 2, // disallow the catch clause parameter name being the same as a variable in the outer scope
     "no-delete-var": 2, // disallow deletion of variables
     "no-label-var": 2, // disallow labels that share a name with a variable
+    "no-restricted-globals": 0, // disallow specified global variables
     "no-shadow-restricted-names": 2, // disallow shadowing of names such as arguments
     "no-shadow": [2, {"hoist": "functions", "allow": ["err", "next", "callback", "cb", "res", "result", "response"]}], // disallow declaration of variables already declared in the outer scope
     "no-undef-init": 2, // disallow use of undefined when initializing variables

@@ -11,12 +11,12 @@
   "main": "global.js",
   "scripts": {},
   "dependencies": {
-    "babel-eslint": "~4.1.8",
-    "eslint-plugin-babel": "~3.1.0",
-    "eslint-plugin-flow-vars": "~0.1.3",
+    "babel-eslint": "~6.1.0",
+    "eslint-plugin-babel": "~3.3.0",
+    "eslint-plugin-flowtype": "~2.11.0",
     "eslint-plugin-react": "~3.4.0"
   },
   "peerDependencies": {
-    "eslint": "~2.0.0"
+    "eslint": ">=2.0.0 <3.3.0 || ~3.3.0"
   }
 }

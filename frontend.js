@@ -9,5 +9,6 @@ module.exports = {
     "__PROD__": false,
   },
   "rules": {
+    "no-process-env": 1, // disallow use of process.env
   }
 };

@@ -18,12 +18,13 @@ module.exports = {
     "arrow-spacing": 2, // require space before/after arrow function's arrow
     "constructor-super": 2, // verify calls of super() in constructors
     "generator-star-spacing": [2, {"before": false, "after": true}], // enforce spacing around the * in generator functions
-    "no-confusing-arrow": 1, // disallow arrow functions where they could be confused with comparisons
     "no-class-assign": 2, // disallow modifying variables of class declarations
+    "no-confusing-arrow": 1, // disallow arrow functions where they could be confused with comparisons
     "no-const-assign": 2, // disallow modifying variables that are declared using const
     "no-dupe-class-members": 2, // disallow duplicate name in class member
     "no-new-symbol": 2, // disallow use of the new operator with the Symbol object
     "no-this-before-super": 2, // disallow use of this/super before calling super() in constructors.
+    "no-useless-computed-key": 2, // disallow unnecessary computed property keys in object literals
     "no-useless-constructor": 2, // disallow unnecessary constructor
     "no-var": 1, // require let or const instead of var
     "object-shorthand": 1, // require method and property shorthand syntax for object literals
@@ -34,6 +35,7 @@ module.exports = {
     "prefer-spread": 2, // suggest using the spread operator instead of .apply().
     "prefer-template": 1, // suggest using template literals instead of strings concatenation
     "require-yield": 2, // disallow generator functions that do not have yield,
+    "rest-spread-spacing": [2, "never"], // Enforce spacing between rest and spread operators and their expressions
     "template-curly-spacing": [2, "never"], // enforce spacing around embedded expressions of template strings
   }
 };

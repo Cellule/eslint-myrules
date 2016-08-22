@@ -13,6 +13,7 @@ module.exports = {
     "no-mixed-requires": 1, // disallow mixing regular variable and require declarations
     "no-new-require": 2, // disallow use of new operator with the require function
     "no-path-concat": 2, // disallow string concatenation with __dirname and __filename
+    "no-process-env": 0, // disallow use of process.env
     "no-process-exit": 1, // disallow process.exit()
     "no-restricted-modules": 0, // restrict usage of specified node modules
     "no-sync": 0, // disallow use of synchronous methods
