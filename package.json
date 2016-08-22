@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-cellule",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "Define my favorite rules for eslint",
   "author": "Michael Ferris",
   "license": "MIT",
