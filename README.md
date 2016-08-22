@@ -26,6 +26,7 @@ In your `.eslintrc` config, extends to this module with
 - `"cellule/codestyle.js"`: Config covering mostly code style preferences.
 - `"cellule/es2015.js"`: Config when your host supports es2015 without [babel](http://babeljs.io/).
 - `"cellule/node.js"`: Config targeting node environment.
+  - [eslint-plguin-node](https://github.com/mysticatea/eslint-plugin-node): Additional ESLint's rules for Node.js
 - `"cellule/flow.js"`: Config when using [flow](http://flowtype.org/).
   - [babel-eslint](https://github.com/babel/babel-eslint): Parser supporting extended language features
   - [eslint-plugin-flowtype](https://github.com/gajus/eslint-plugin-flowtype): An eslint plugin that makes flow type annotations global variables and marks declarations as used

@@ -1,8 +1,14 @@
+require("./monkeyPatch").addPlugins(["node"]);
+
 module.exports = {
+  plugins: ["node"],
+  extends: [require.resolve("eslint-plugin-node/conf/recommended.json")],
   "env": {
     "node": true
   },
   "rules": {
+    "node/no-missing-import": 2,
+    "node/no-unsupported-features": 0,
     /*
      * Node.js and CommonJS
      * These rules are specific to JavaScript running on Node.js or using CommonJS in the browser.
